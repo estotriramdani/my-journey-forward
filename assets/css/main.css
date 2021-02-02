@@ -312,7 +312,7 @@ body {
     margin-right: 20px !important;
   }
   .card-decided {
-    width: 100%;
+    width: 85vw;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
