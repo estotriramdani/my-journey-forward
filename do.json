@@ -1,0 +1,42 @@
+[
+  {
+    "no": 1,
+    "what": "Algorithm and Basic of Programming",
+    "is_checked": "yes"
+  },
+  {
+    "no": 2,
+    "what": "Web Programming Basic",
+    "is_checked": "yes"
+  },
+  {
+    "no": 3,
+    "what": "Learn Responsive Website",
+    "is_checked": "yes"
+  },
+  {
+    "no": 4,
+    "what": "Advance JavaScript",
+    "is_checked": "yes"
+  },
+  {
+    "no": 5,
+    "what": "Learn Modern JavaScript Framework",
+    "is_checked": "yes"
+  },
+  {
+    "no": 6,
+    "what": "Learn Flutter (Accros platform tools)",
+    "is_checked": "yes"
+  },
+  {
+    "no": 7,
+    "what": "Learn Project Management",
+    "is_checked": "yes"
+  },
+  {
+    "no": "..",
+    "what": "Keep learning, sharing, and practicing knowlegde that I have got.",
+    "is_checked": "yes"
+  }
+]

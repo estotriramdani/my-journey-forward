@@ -8,6 +8,43 @@
 $dark: #343a40;
 $light: #f8f9fa;
 
+body {
+  background-color: $dark;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $dark;
+  z-index: -99;
+  display: flex;
+  opacity: 0;
+  transition: 0.5s;
+  .line {
+    background-color: $light;
+    height: 100px;
+    width: 10px;
+    margin: auto;
+    animation-name: rolling;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transition: 0.2s;
+  }
+}
+
+@keyframes rolling {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .container {
   width: 411px;
   height: 100%;

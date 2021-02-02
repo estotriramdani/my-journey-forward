@@ -1,0 +1,8 @@
+echo "# my-journet-forward" >> README.md
+git init
+git add .
+
+git remote add origin https://github.com/estotriramdani/my-journet-forward.git
+git commit -m "first commit"
+git branch -M main
+git push -u origin main
