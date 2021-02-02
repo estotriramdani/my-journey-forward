@@ -214,7 +214,6 @@ body {
       justify-content: space-around;
   -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
-  width: 100vw;
 }
 
 .card-decided .card-detail p {
@@ -311,6 +310,9 @@ body {
   .got-my-job-content .card-wrapper {
     width: 70vw;
     margin-right: 20px !important;
+  }
+  .card-decided {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

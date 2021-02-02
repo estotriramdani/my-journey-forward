@@ -160,7 +160,7 @@ body {
   display: flex;
   justify-content: space-around;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
-  width: 100vw;
+
   .card-detail {
     p {
       cursor: pointer;
@@ -246,5 +246,9 @@ body {
       width: 70vw;
       margin-right: 20px !important;
     }
+  }
+
+  .card-decided {
+    width: 100%;
   }
 }
