@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 411px;
+  height: 100%;
+  background-color: #343a40;
+  color: #f8f9fa;
+  margin: auto;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.top {
+  padding: 27px;
+  height: 95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.top .title {
+  font-size: 23px;
+}
+
+.top .name {
+  font-size: 18px;
+}
+
+.top .btn-scroll a {
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: #f8f9fa;
+  font-size: 15px;
+  color: #343a40;
+  border-radius: 7px;
+  text-decoration: none;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  background-color: #343a40;
+  width: 100%;
+  border-top: 5px solid #f8f9fa;
+  padding: 27px;
+  -webkit-box-shadow: -5px 0 16px rgba(0, 0, 0, 0.5);
+          box-shadow: -5px 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.card-important {
+  color: #343a40 !important;
+  background-color: #f8f9fa !important;
+}
+
+.card-wrapper {
+  width: 360px;
+}
+
+.card-wrapper .card-small-title {
+  font-size: 14px;
+}
+
+.card-wrapper .card {
+  border: 1px solid #f8f9fa;
+  background-color: #343a40;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 358px;
+  padding: 10px 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-wrapper .card .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 15px;
+}
+
+.card-wrapper .card .image img {
+  height: 75px;
+  width: 75px;
+}
+
+.card-wrapper .card .desc {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  margin-top: -8px;
+}
+
+.card-wrapper .card .desc p {
+  font-size: 14px;
+}
+
+.got-my-job-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 140px;
+}
+
+.got-my-job-content .card-wrapper {
+  margin-right: 20px;
+}
+
+.line-dashed {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.line-dashed img {
+  display: inline-block;
+  position: relative;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.card-decided {
+  border: 1px solid #f8f9fa;
+  padding: 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-decided .card-detail p {
+  cursor: pointer;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 75px;
+  background-color: #f8f9fa;
+  color: #343a40;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card-decided .card-detail p:hover {
+  color: #f8f9fa;
+  background-color: #343a40;
+  border: 1px solid #f8f9fa;
+}
+
+.btn-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-section .btn-click {
+  background-color: #f8f9fa;
+  color: #343a40;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 8px;
+  font-size: 10px;
+  padding: 7px 14px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid #f8f9fa;
+  border-radius: 5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn-section .btn-click:hover {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.statement p {
+  font-size: 18px;
+  color: #f8f9fa;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.statement p a {
+  color: #f8f9fa;
+}
+
+.after-got-job {
+  display: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.got-no-job-content {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .card-wrapper .card {
+    width: 86vw;
+  }
+  .got-my-job-content .card-wrapper {
+    width: 70vw;
+    margin-right: 20px !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */

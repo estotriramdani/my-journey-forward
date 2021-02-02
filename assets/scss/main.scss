@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+  box-sizing: border-box;
+}
+
+$dark: #343a40;
+$light: #f8f9fa;
+
+.container {
+  width: 411px;
+  height: 100%;
+  background-color: $dark;
+  color: $light;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  // overflow-x: hidden;
+}
+
+.top {
+  padding: 27px;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  .title {
+    font-size: 23px;
+  }
+  .name {
+    font-size: 18px;
+  }
+  .btn-scroll {
+    a {
+      display: inline-block;
+      padding: 5px 20px;
+      background-color: $light;
+      font-size: 15px;
+      color: $dark;
+      border-radius: 7px;
+      text-decoration: none;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  background-color: $dark;
+  // min-height: 120%;
+
+  width: 100%;
+  border-top: 5px solid $light;
+  padding: 27px;
+  box-shadow: -5px 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.card-important {
+  color: $dark !important;
+  background-color: $light !important;
+}
+
+.card-wrapper {
+  width: 360px;
+  .card-small-title {
+    font-size: 14px;
+  }
+  .card {
+    border: 1px solid $light;
+    background-color: $dark;
+    display: flex;
+    width: 358px;
+    padding: 10px 15px;
+    align-items: center;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+    .image {
+      flex: 1;
+      margin-right: 15px;
+      img {
+        height: 75px;
+        width: 75px;
+      }
+    }
+    .desc {
+      flex: 3;
+      margin-top: -8px;
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.got-my-job-content {
+  display: flex;
+  overflow-x: scroll;
+  align-items: flex-start;
+  height: 140px;
+  .card-wrapper {
+    margin-right: 20px;
+  }
+}
+
+.line-dashed {
+  width: 100%;
+  display: flex;
+  img {
+    display: inline-block;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+
+.card-decided {
+  border: 1px solid $light;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+  .card-detail {
+    p {
+      cursor: pointer;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 75px;
+      background-color: $light;
+      color: $dark;
+      transition: 0.3s;
+      &:hover {
+        color: $light;
+        background-color: $dark;
+        border: 1px solid $light;
+      }
+    }
+  }
+}
+
+.btn-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .btn-click {
+    background-color: $light;
+    color: $dark;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 8px;
+    font-size: 10px;
+    padding: 7px 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid $light;
+    border-radius: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover {
+      background-color: $dark;
+      color: $light;
+    }
+  }
+}
+
+.statement {
+  p {
+    font-size: 18px;
+    color: $light;
+    text-align: center;
+    margin-bottom: 60px;
+    a {
+      color: $light;
+    }
+  }
+}
+
+// hiding content got/no job
+.after-got-job {
+  display: none;
+  transition: 0.5s;
+}
+
+.got-no-job-content {
+  transition: 0.5s;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .card-wrapper {
+    .card {
+      width: 86vw;
+    }
+  }
+
+  .got-my-job-content {
+    .card-wrapper {
+      width: 70vw;
+      margin-right: 20px !important;
+    }
+  }
+}
