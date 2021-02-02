@@ -313,6 +313,12 @@ body {
   }
   .card-decided {
     width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .card-decided .card-detail {
+    width: 120px;
+    margin-left: -35px;
   }
 }
 /*# sourceMappingURL=main.css.map */

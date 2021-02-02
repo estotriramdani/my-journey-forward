@@ -250,5 +250,10 @@ body {
 
   .card-decided {
     width: 100%;
+    justify-content: space-around;
+    .card-detail {
+      width: 120px;
+      margin-left: -35px;
+    }
   }
 }
